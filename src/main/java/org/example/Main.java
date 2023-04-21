@@ -1,7 +1,10 @@
 package org.example;
 
+import ru.netology.service.CashbackHackService;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+       CashbackHackService service = new CashbackHackService();
+       System.out.println("Не хватает " + service.remain(1990));
     }
 }
